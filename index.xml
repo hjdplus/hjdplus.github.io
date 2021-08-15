@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>exhibit &#34;A&#34;</title>
+    <link>https://bumblejd.github.io/</link>
+    <description>Recent content on exhibit &#34;A&#34;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 14 Aug 2021 13:19:50 +0000</lastBuildDate><atom:link href="https://bumblejd.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GIT</title>
+      <link>https://bumblejd.github.io/notes/git/</link>
+      <pubDate>Sat, 14 Aug 2021 13:19:50 +0000</pubDate>
+      
+      <guid>https://bumblejd.github.io/notes/git/</guid>
+      <description>delete submodule git submodule deinit -f [moduel name] rm -rf .git/modules/[module name] git rm -f [module name] git error  add submodule  git submodule add {gitRepositoryURL} {projectFolder}
+git add &amp;ndash;all
+git commit -m &amp;lsquo;add sj submodule&amp;rsquo;
+remove submodule git submodule deinit -f {projectFolder}
+ issue #1 “already exists in the index”    check submodule git ls-files &amp;ndash;stage {projectFolder}
+  remove submodule cache git rm &amp;ndash;cached {projectFolder}</description>
+    </item>
+    
+    <item>
+      <title>UBUNTU</title>
+      <link>https://bumblejd.github.io/notes/ubuntu/</link>
+      <pubDate>Sat, 14 Aug 2021 12:49:30 +0000</pubDate>
+      
+      <guid>https://bumblejd.github.io/notes/ubuntu/</guid>
+      <description>background 실행 확인 ps -ef |grep python</description>
+    </item>
+    
+    <item>
+      <title>HUGO</title>
+      <link>https://bumblejd.github.io/notes/hugo/</link>
+      <pubDate>Sat, 14 Aug 2021 12:49:26 +0000</pubDate>
+      
+      <guid>https://bumblejd.github.io/notes/hugo/</guid>
+      <description>hugo build checking hugo server --baseURL &amp;quot;http://{ip addr}:1313&amp;quot; --bind &amp;quot;0.0.0.0&amp;quot; hugo server --baseURL &amp;quot;http://192.168.xxx.xxx:1313&amp;quot; --bind &amp;quot;0.0.0.0&amp;quot; add .md file hugo new *.md build hugo -t [theme DIR] hugo -t hyde git push cd public git add . git commit -m &amp;quot;&amp;lt;커밋 메세지&amp;gt;&amp;quot; git push origin master cd .. git add . git commit -m &amp;quot;&amp;lt;커밋 메세지&amp;gt;&amp;quot; git push origin master </description>
+    </item>
+    
+    <item>
+      <title>DOCKER</title>
+      <link>https://bumblejd.github.io/notes/docker/</link>
+      <pubDate>Sat, 14 Aug 2021 12:49:03 +0000</pubDate>
+      
+      <guid>https://bumblejd.github.io/notes/docker/</guid>
+      <description>docker run docker run -it -p 8888:8888 continuumio/anaconda3   docker ps  ll
+ docker ps -a   docker rm [container ID], [container ID]    docker images   docker rmi [image ID] </description>
+    </item>
+    
+    <item>
+      <title>DEEPLEARNING</title>
+      <link>https://bumblejd.github.io/notes/deeplearning/</link>
+      <pubDate>Sat, 14 Aug 2021 12:48:43 +0000</pubDate>
+      
+      <guid>https://bumblejd.github.io/notes/deeplearning/</guid>
+      <description>참고 도구 -&amp;gt; 기타 -&amp;gt; 코기 모드 + 아기고양이 모드 설정 필수입니다. 너무 귀엽쥬 도구 -&amp;gt; 기타 -&amp;gt; 파워 레벨 설정하면 코딩 할때, 재밋습니다. 단점으로 정신사납습니다.
+GPU 할당 x_gpu2 = x_cpu.to(&amp;lsquo;cuda:1&amp;rsquo;)</description>
+    </item>
+    
+    <item>
+      <title>ANACONDA</title>
+      <link>https://bumblejd.github.io/notes/anaconda/</link>
+      <pubDate>Sat, 14 Aug 2021 12:48:22 +0000</pubDate>
+      
+      <guid>https://bumblejd.github.io/notes/anaconda/</guid>
+      <description>Checking virtual envs conda info --envs (base) auto run off conda config --set auto_activate_base False Add vertual env conda create -n $NAME$ python=3.8 </description>
+    </item>
+    
+    <item>
+      <title>Test1</title>
+      <link>https://bumblejd.github.io/post/test1/</link>
+      <pubDate>Sun, 08 Aug 2021 12:40:58 +0900</pubDate>
+      
+      <guid>https://bumblejd.github.io/post/test1/</guid>
+      <description>20210806 test </description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://bumblejd.github.io/post/test/</link>
+      <pubDate>Sun, 08 Aug 2021 11:34:58 +0900</pubDate>
+      
+      <guid>https://bumblejd.github.io/post/test/</guid>
+      <description>test test</description>
+    </item>
+    
+  </channel>
+</rss>
