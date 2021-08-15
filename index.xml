@@ -70,15 +70,6 @@ GPU 할당 x_gpu2 = x_cpu.to(&amp;lsquo;cuda:1&amp;rsquo;)</description>
     </item>
     
     <item>
-      <title>Test1</title>
-      <link>https://hjdplus.github.io/post/test1/</link>
-      <pubDate>Sun, 08 Aug 2021 12:40:58 +0900</pubDate>
-      
-      <guid>https://hjdplus.github.io/post/test1/</guid>
-      <description>20210806 test </description>
-    </item>
-    
-    <item>
       <title>Test</title>
       <link>https://hjdplus.github.io/post/test/</link>
       <pubDate>Sun, 08 Aug 2021 11:34:58 +0900</pubDate>
@@ -89,15 +80,11 @@ GPU 할당 x_gpu2 = x_cpu.to(&amp;lsquo;cuda:1&amp;rsquo;)</description>
     
     <item>
       <title>About</title>
-      <link>https://hjdplus.github.io/about/about/</link>
+      <link>https://hjdplus.github.io/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://hjdplus.github.io/about/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-Setup Some fun facts about Hugo:
- Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
+      <guid>https://hjdplus.github.io/about/</guid>
+      <description>This page is a place for recording codes</description>
     </item>
     
   </channel>
