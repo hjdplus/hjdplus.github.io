@@ -7,14 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 14 Aug 2021 13:19:50 +0000</lastBuildDate><atom:link href="https://hjdplus.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Aug 2021 09:20:31 +0000</lastBuildDate><atom:link href="https://hjdplus.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ANACONDA3</title>
+      <link>https://hjdplus.github.io/notes/anaconda3/</link>
+      <pubDate>Mon, 16 Aug 2021 09:20:31 +0000</pubDate>
+      
+      <guid>https://hjdplus.github.io/notes/anaconda3/</guid>
+      <description>ANACONDA3 checking virtual envs conda info --envs (base) auto run off conda config --set auto_activate_base False Add vertual env conda create -n $NAME$ python=3.8 </description>
+    </item>
+    
     <item>
       <title>GIT</title>
       <link>https://hjdplus.github.io/notes/git/</link>
-      <pubDate>Sat, 14 Aug 2021 13:19:50 +0000</pubDate>
+      <pubDate>Mon, 16 Aug 2021 09:20:06 +0000</pubDate>
       
       <guid>https://hjdplus.github.io/notes/git/</guid>
-      <description>delete submodule git submodule deinit -f [moduel name] rm -rf .git/modules/[module name] git rm -f [module name] git error  add submodule  git submodule add {gitRepositoryURL} {projectFolder}
+      <description>GIT delete submodule git submodule deinit -f [moduel name] rm -rf .git/modules/[module name] git rm -f [module name] git error  add submodule  git submodule add {gitRepositoryURL} {projectFolder}
 git add &amp;ndash;all
 git commit -m &amp;lsquo;add sj submodule&amp;rsquo;
 remove submodule git submodule deinit -f {projectFolder}
@@ -25,48 +34,38 @@ remove submodule git submodule deinit -f {projectFolder}
     <item>
       <title>UBUNTU</title>
       <link>https://hjdplus.github.io/notes/ubuntu/</link>
-      <pubDate>Sat, 14 Aug 2021 12:49:30 +0000</pubDate>
+      <pubDate>Mon, 16 Aug 2021 09:20:01 +0000</pubDate>
       
       <guid>https://hjdplus.github.io/notes/ubuntu/</guid>
-      <description>background 실행 확인 ps -ef |grep python</description>
+      <description>UBUNTU apt-get (sudo) apt-get update (sudo) apt-get upgrade (sudo) apt-get install [package name] ex) sudo apt-get install htop background 실행 확인 ps -ef |grep python </description>
     </item>
     
     <item>
       <title>HUGO</title>
       <link>https://hjdplus.github.io/notes/hugo/</link>
-      <pubDate>Sat, 14 Aug 2021 12:49:26 +0000</pubDate>
+      <pubDate>Mon, 16 Aug 2021 09:19:55 +0000</pubDate>
       
       <guid>https://hjdplus.github.io/notes/hugo/</guid>
-      <description>hugo build checking hugo server --baseURL &amp;quot;http://{ip addr}:1313&amp;quot; --bind &amp;quot;0.0.0.0&amp;quot; hugo server --baseURL &amp;quot;http://192.168.xxx.xxx:1313&amp;quot; --bind &amp;quot;0.0.0.0&amp;quot; add .md file hugo new *.md build hugo -t [theme DIR] hugo -t hyde git push cd public git add . git commit -m &amp;quot;&amp;lt;커밋 메세지&amp;gt;&amp;quot; git push origin master cd .. git add . git commit -m &amp;quot;&amp;lt;커밋 메세지&amp;gt;&amp;quot; git push origin master </description>
-    </item>
-    
-    <item>
-      <title>DOCKER</title>
-      <link>https://hjdplus.github.io/notes/docker/</link>
-      <pubDate>Sat, 14 Aug 2021 12:49:03 +0000</pubDate>
-      
-      <guid>https://hjdplus.github.io/notes/docker/</guid>
-      <description>docker run docker run -it -p 8888:8888 continuumio/anaconda3   docker ps  ll
- docker ps -a   docker rm [container ID], [container ID]    docker images   docker rmi [image ID] </description>
+      <description>HUGO hugo build checking hugo server --baseURL &amp;quot;http://{ip addr}:1313&amp;quot; --bind &amp;quot;0.0.0.0&amp;quot; hugo server --baseURL &amp;quot;http://192.168.xxx.xxx:1313&amp;quot; --bind &amp;quot;0.0.0.0&amp;quot; add .md file hugo new *.md build hugo -t [theme DIR] hugo -t hyde git push cd public git add . git commit -m &amp;quot;&amp;lt;커밋 메세지&amp;gt;&amp;quot; git push origin master cd .. git add . git commit -m &amp;quot;&amp;lt;커밋 메세지&amp;gt;&amp;quot; git push origin master </description>
     </item>
     
     <item>
       <title>DEEPLEARNING</title>
       <link>https://hjdplus.github.io/notes/deeplearning/</link>
-      <pubDate>Sat, 14 Aug 2021 12:48:43 +0000</pubDate>
+      <pubDate>Mon, 16 Aug 2021 09:19:31 +0000</pubDate>
       
       <guid>https://hjdplus.github.io/notes/deeplearning/</guid>
-      <description>참고 도구 -&amp;gt; 기타 -&amp;gt; 코기 모드 + 아기고양이 모드 설정 필수입니다. 너무 귀엽쥬 도구 -&amp;gt; 기타 -&amp;gt; 파워 레벨 설정하면 코딩 할때, 재밋습니다. 단점으로 정신사납습니다.
+      <description>DEEPLEARNING 참고 도구 -&amp;gt; 기타 -&amp;gt; 코기 모드 + 아기고양이 모드 설정 필수입니다. 너무 귀엽쥬 도구 -&amp;gt; 기타 -&amp;gt; 파워 레벨 설정하면 코딩 할때, 재밋습니다. 단점으로 정신사납습니다.
 GPU 할당 x_gpu2 = x_cpu.to(&amp;lsquo;cuda:1&amp;rsquo;)</description>
     </item>
     
     <item>
-      <title>ANACONDA</title>
-      <link>https://hjdplus.github.io/notes/anaconda/</link>
-      <pubDate>Sat, 14 Aug 2021 12:48:22 +0000</pubDate>
+      <title>DOCKER</title>
+      <link>https://hjdplus.github.io/notes/docker/</link>
+      <pubDate>Mon, 16 Aug 2021 09:17:22 +0000</pubDate>
       
-      <guid>https://hjdplus.github.io/notes/anaconda/</guid>
-      <description>Checking virtual envs conda info --envs (base) auto run off conda config --set auto_activate_base False Add vertual env conda create -n $NAME$ python=3.8 </description>
+      <guid>https://hjdplus.github.io/notes/docker/</guid>
+      <description>DOCKER login docker login  docker run docker run -it -p 8888:8888 continuumio/anaconda3 nvidia-docker run --restart=&amp;quot;always&amp;quot; -itd --network mybridge --ip 172.18.0.3 -p:8888:80 -v ~/Documents/DEV/super-resolution/:/var/super-resolution --name test tensorflow/tensorflow:2.6.0-gpu-jupyter  container check docker ps docker ps -a delete container docker rm [container ID]  image check docker images  delete image docker rmi [image ID]  docker exit with quit ctrl + D  docker exit without quit ctrl + P, ctrl + Q   generate bridge docker network create --driver bridge [bridge name] $docker inspect mybridge  docker network docker network ls docker network rm [network name]   ex) docker container init (#jupyter notebook) docker pull tensorflow/tensorflow:2.</description>
     </item>
     
   </channel>

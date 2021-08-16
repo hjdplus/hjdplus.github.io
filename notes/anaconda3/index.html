@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.79.0" />
 
-  <title>DOCKER &middot; exhibit &#34;A&#34;</title>
+  <title>ANACONDA3 &middot; exhibit &#34;A&#34;</title>
 
     
 
@@ -217,7 +217,7 @@
 
 
 <div class="header">
-  <h1>DOCKER</h1>
+  <h1>ANACONDA3</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -226,7 +226,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>16 Aug 2021, 09:17</time>
+    <time>16 Aug 2021, 09:20</time>
   </div>
 
   
@@ -247,69 +247,13 @@
 
 </div>
 
-  <h1 id="docker">DOCKER</h1>
-<h2 id="login">login</h2>
-<pre><code>docker login
-</code></pre>
-<h2 id="docker-run">docker run</h2>
-<pre><code>docker run -it -p 8888:8888 continuumio/anaconda3
-
-nvidia-docker run --restart=&quot;always&quot; -itd --network mybridge --ip 172.18.0.3 -p:8888:80 -v ~/Documents/DEV/super-resolution/:/var/super-resolution --name test tensorflow/tensorflow:2.6.0-gpu-jupyter
-</code></pre>
-<h2 id="container-check">container check</h2>
-<pre><code>docker ps
-docker ps -a
-</code></pre><h2 id="delete-container">delete container</h2>
-<pre><code>docker rm [container ID]
-</code></pre>
-<h2 id="image-check">image check</h2>
-<pre><code>docker images
-</code></pre>
-<h2 id="delete-image">delete image</h2>
-<pre><code>docker rmi [image ID]
-</code></pre>
-<h2 id="docker-exit-with-quit">docker exit with quit</h2>
-<pre><code>ctrl + D
-</code></pre>
-<h2 id="docker-exit-without-quit">docker exit without quit</h2>
-<pre><code>ctrl + P, ctrl + Q
-</code></pre>
-<hr>
-<h2 id="generate-bridge">generate bridge</h2>
-<pre><code>docker network create --driver bridge [bridge name]
-$docker inspect mybridge
-</code></pre>
-<h2 id="docker-network">docker network</h2>
-<pre><code>docker network ls
-docker network rm [network name]
-</code></pre>
-<hr>
-<h2 id="ex-docker-container-init-jupyter-notebook">ex) docker container init (#jupyter notebook)</h2>
-<pre><code>docker pull tensorflow/tensorflow:2.6.0-gpu-jupyter
-
-nvidia-docker run -itd --restart=&quot;always&quot; --name test -p 886:8888 -v ~/Documents/DEV/super-resolution:/tf/super-resolution/ tensorflow/tensorflow:2.6.0-gpu-jupyter
-
-(container)# ipython
-In [1] :from notebook.auth import passwd 
-In [2]: passwd() 
-&gt;&gt;&gt;&gt; Enter password: 
-&gt;&gt;&gt;&gt; Verify password:
-# copy this string to somewhere
-out[2]: 'argon2:$argon2id$v=19$m=10240,t=10,p=8$PLyCJPwzphBgN9jEthOcKw$HKjo9Clr7BCIKd7OhchspA' 
-In [3]: quit()
-
-(container)# jupyter notebook --generate-config -y
-
-
-(container)# apt-get install nano
-</code></pre>
-<pre><code>c = get_config()
-
-c.NotebookApp.ip = 'localhost'
-c.NotebookApp.open_browser= False
-c.NotebookApp.password = 'argon2:$argon2id$v=19$m=10240,t=10,p=8$58ECLXdQzHASXRXioTRRvw$VCg8XqaMCkZpruFb8+AgiQ'
-c.NotebookApp.password_required = True
-c.NotebookApp.port = 8888
+  <h1 id="anaconda3">ANACONDA3</h1>
+<h2 id="checking-virtual-envs">checking virtual envs</h2>
+<pre><code>conda info --envs
+</code></pre><h2 id="base-auto-run-off">(base) auto run off</h2>
+<pre><code>conda config --set auto_activate_base False
+</code></pre><h2 id="add-vertual-env">Add vertual env</h2>
+<pre><code>conda create -n $NAME$ python=3.8
 </code></pre>
   
   
@@ -342,8 +286,14 @@ c.NotebookApp.port = 8888
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
+    <a href="https://hjdplus.github.io/notes/git/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
   <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://hjdplus.github.io/notes/git/">GIT</a>
+    </nav>
     
   </div>
   <div class="pure-u-2-24">
@@ -352,13 +302,13 @@ c.NotebookApp.port = 8888
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://hjdplus.github.io/notes/deeplearning/">DEEPLEARNING</a>
+      <a href="https://hjdplus.github.io/notes/private/dev-env/">Dev-Env</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://hjdplus.github.io/notes/deeplearning/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://hjdplus.github.io/notes/private/dev-env/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

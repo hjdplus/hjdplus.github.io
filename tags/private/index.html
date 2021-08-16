@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.79.0" />
 
-  <title>DOCKER &middot; exhibit &#34;A&#34;</title>
+  <title>private &middot; exhibit &#34;A&#34;</title>
 
     
 
@@ -42,6 +42,9 @@
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  
+  
+  <link rel="alternate" type="application/rss+xml" title="exhibit &#34;A&#34;"
+    href='https://hjdplus.github.io/tags/private/index.xml' />
   
 
   
@@ -116,6 +119,11 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href='https://hjdplus.github.io/tags/private/index.xml'><i
+          class="fas fa-rss fa-fw"></i>RSS</a>
+    </li>
     
 
     
@@ -217,16 +225,20 @@
 
 
 <div class="header">
-  <h1>DOCKER</h1>
-  <h2></h2>
+  <h1>private</h1>
 </div>
-<div class="content">
 
-  <div class="post-meta">
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://hjdplus.github.io/notes/private/dev-env/">Dev-Env</a></h2>
+
+    <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>16 Aug 2021, 09:17</time>
+    <time>16 Aug 2021, 09:21</time>
   </div>
 
   
@@ -239,7 +251,7 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://hjdplus.github.io/tags/dev">DEV</a>
+      <a class="post-taxonomy-tag" href="https://hjdplus.github.io/tags/private">private</a>
     
   </div>
   
@@ -247,130 +259,17 @@
 
 </div>
 
-  <h1 id="docker">DOCKER</h1>
-<h2 id="login">login</h2>
-<pre><code>docker login
-</code></pre>
-<h2 id="docker-run">docker run</h2>
-<pre><code>docker run -it -p 8888:8888 continuumio/anaconda3
+  </header>
 
-nvidia-docker run --restart=&quot;always&quot; -itd --network mybridge --ip 172.18.0.3 -p:8888:80 -v ~/Documents/DEV/super-resolution/:/var/super-resolution --name test tensorflow/tensorflow:2.6.0-gpu-jupyter
-</code></pre>
-<h2 id="container-check">container check</h2>
-<pre><code>docker ps
-docker ps -a
-</code></pre><h2 id="delete-container">delete container</h2>
-<pre><code>docker rm [container ID]
-</code></pre>
-<h2 id="image-check">image check</h2>
-<pre><code>docker images
-</code></pre>
-<h2 id="delete-image">delete image</h2>
-<pre><code>docker rmi [image ID]
-</code></pre>
-<h2 id="docker-exit-with-quit">docker exit with quit</h2>
-<pre><code>ctrl + D
-</code></pre>
-<h2 id="docker-exit-without-quit">docker exit without quit</h2>
-<pre><code>ctrl + P, ctrl + Q
-</code></pre>
-<hr>
-<h2 id="generate-bridge">generate bridge</h2>
-<pre><code>docker network create --driver bridge [bridge name]
-$docker inspect mybridge
-</code></pre>
-<h2 id="docker-network">docker network</h2>
-<pre><code>docker network ls
-docker network rm [network name]
-</code></pre>
-<hr>
-<h2 id="ex-docker-container-init-jupyter-notebook">ex) docker container init (#jupyter notebook)</h2>
-<pre><code>docker pull tensorflow/tensorflow:2.6.0-gpu-jupyter
-
-nvidia-docker run -itd --restart=&quot;always&quot; --name test -p 886:8888 -v ~/Documents/DEV/super-resolution:/tf/super-resolution/ tensorflow/tensorflow:2.6.0-gpu-jupyter
-
-(container)# ipython
-In [1] :from notebook.auth import passwd 
-In [2]: passwd() 
-&gt;&gt;&gt;&gt; Enter password: 
-&gt;&gt;&gt;&gt; Verify password:
-# copy this string to somewhere
-out[2]: 'argon2:$argon2id$v=19$m=10240,t=10,p=8$PLyCJPwzphBgN9jEthOcKw$HKjo9Clr7BCIKd7OhchspA' 
-In [3]: quit()
-
-(container)# jupyter notebook --generate-config -y
-
-
-(container)# apt-get install nano
-</code></pre>
-<pre><code>c = get_config()
-
-c.NotebookApp.ip = 'localhost'
-c.NotebookApp.open_browser= False
-c.NotebookApp.password = 'argon2:$argon2id$v=19$m=10240,t=10,p=8$58ECLXdQzHASXRXioTRRvw$VCg8XqaMCkZpruFb8+AgiQ'
-c.NotebookApp.password_required = True
-c.NotebookApp.port = 8888
-</code></pre>
-  
-  
-
-
-<style>
-	ul.share-buttons{
-	  list-style: none;
-	  padding: 0;
-	}
-
-	ul.share-buttons li{
-	  display: inline;
-	}
-
-	ul.share-buttons .sr-only{
-	  position: absolute;
-	  clip: rect(1px 1px 1px 1px);
-	  clip: rect(1px, 1px, 1px, 1px);
-	  padding: 0;
-	  border: 0;
-	  height: 1px;
-	  width: 1px;
-	  overflow: hidden;
-	}
-</style>
-
+  <p>
+  Dev-Env IP address  official: 218.50.144.124 Ubuntu: 192.168.35.38 Windows: 192.168.35.39 docker ip4: 172.17.0.1 docker sm: 255.255.0.0 ip(basic): 192.168.35.39 sm: 255.255.255.0 gw: 192.168.35.1 dns1: 210.220.163.82 dns2: 219.250.36.130   Devices I7+RTX3060+SSD256 I5+RTX+SSD500 (260000+X+150000)
+   WINDOWS UBUNTU     CLIENT SERVER   PYTHON C/C++    jupyter &lsquo;argon2:$argon2id$v=19$m=10240,t=10,p=8$bEKn8Xh2rhEU4YxjKzgMEg$jlfr1J3rVim+L4sSFyPuLA&rsquo;
+  </p>
 
   
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
-    
-  </div>
-  <div class="pure-u-10-24">
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="https://hjdplus.github.io/notes/deeplearning/">DEEPLEARNING</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://hjdplus.github.io/notes/deeplearning/"><i class="fa fa-chevron-right"></i></a>
-    
-  </div>
-</div>
-
+</article>
 
   
-  
-  
-  
-
-  
-
 </div>
 
 </div>
@@ -400,11 +299,7 @@ c.NotebookApp.port = 8888
 
 
 
-<script src="https://hjdplus.github.io/js/math-code.js"></script>
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  
 
 
 </body>
 </html>
-
