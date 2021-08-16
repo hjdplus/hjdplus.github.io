@@ -7,17 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 16 Aug 2021 09:21:03 +0000</lastBuildDate><atom:link href="https://hjdplus.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Dev-Env</title>
-      <link>https://hjdplus.github.io/notes/private/dev-env/</link>
-      <pubDate>Mon, 16 Aug 2021 09:21:03 +0000</pubDate>
-      
-      <guid>https://hjdplus.github.io/notes/private/dev-env/</guid>
-      <description>Dev-Env IP address  official: 218.50.144.124 Ubuntu: 192.168.35.38 Windows: 192.168.35.39 docker ip4: 172.17.0.1 docker sm: 255.255.0.0 ip(basic): 192.168.35.39 sm: 255.255.255.0 gw: 192.168.35.1 dns1: 210.220.163.82 dns2: 219.250.36.130   Devices I7+RTX3060+SSD256 I5+RTX+SSD500 (260000+X+150000)
-   WINDOWS UBUNTU     CLIENT SERVER   PYTHON C/C++    jupyter &amp;lsquo;argon2:$argon2id$v=19$m=10240,t=10,p=8$bEKn8Xh2rhEU4YxjKzgMEg$jlfr1J3rVim+L4sSFyPuLA&amp;rsquo;</description>
-    </item>
-    
+    <lastBuildDate>Mon, 16 Aug 2021 09:20:31 +0000</lastBuildDate><atom:link href="https://hjdplus.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ANACONDA3</title>
       <link>https://hjdplus.github.io/notes/anaconda3/</link>
