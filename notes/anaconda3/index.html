@@ -254,7 +254,16 @@
 <pre><code>conda config --set auto_activate_base False
 </code></pre><h2 id="add-vertual-env">Add vertual env</h2>
 <pre><code>conda create -n $NAME$ python=3.8
-</code></pre>
+(from *.yml) conda env create -f environment.yml
+</code></pre><hr>
+<h1 id="jupyter">jupyter</h1>
+<p>pip install ipykernel</p>
+<h2 id="install-kernel">install kernel</h2>
+<p>python -m ipykernel install &ndash;user &ndash;name [virtualEnv] &ndash;display-name &ldquo;[displayKenrelName]&rdquo;
+ex) python -m ipykernel install &ndash;user &ndash;name sisr &ndash;display-name sisr</p>
+<h2 id="delete-kernel">delete kernel</h2>
+<p>jupyter kernelspec uninstall yourKernel</p>
+
   
   
 

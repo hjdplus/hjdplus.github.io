@@ -248,7 +248,10 @@
 </div>
 
   <h1 id="git">GIT</h1>
-<h1 id="delete-submodule">delete submodule</h1>
+<h2 id="delete-specific-file-by-searching-history">delete specific file by searching history</h2>
+<pre><code>git filter-branch --force --index-filter &quot;git rm --cached --ignore-unmatch [specific/dir/filename]&quot; --prune-empty --tag-name-filter cat -- --all
+git push origin --force --all
+</code></pre><h2 id="delete-submodule">delete submodule</h2>
 <pre><code>git submodule deinit -f [moduel name]
 rm -rf .git/modules/[module name]
 git rm -f [module name]

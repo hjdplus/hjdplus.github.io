@@ -14,7 +14,9 @@
       <pubDate>Mon, 16 Aug 2021 09:20:31 +0000</pubDate>
       
       <guid>https://hjdplus.github.io/notes/anaconda3/</guid>
-      <description>ANACONDA3 checking virtual envs conda info --envs (base) auto run off conda config --set auto_activate_base False Add vertual env conda create -n $NAME$ python=3.8 </description>
+      <description>ANACONDA3 checking virtual envs conda info --envs (base) auto run off conda config --set auto_activate_base False Add vertual env conda create -n $NAME$ python=3.8 (from *.yml) conda env create -f environment.yml  jupyter pip install ipykernel
+install kernel python -m ipykernel install &amp;ndash;user &amp;ndash;name [virtualEnv] &amp;ndash;display-name &amp;ldquo;[displayKenrelName]&amp;rdquo; ex) python -m ipykernel install &amp;ndash;user &amp;ndash;name sisr &amp;ndash;display-name sisr
+delete kernel jupyter kernelspec uninstall yourKernel</description>
     </item>
     
     <item>
@@ -23,12 +25,10 @@
       <pubDate>Mon, 16 Aug 2021 09:20:06 +0000</pubDate>
       
       <guid>https://hjdplus.github.io/notes/git/</guid>
-      <description>GIT delete submodule git submodule deinit -f [moduel name] rm -rf .git/modules/[module name] git rm -f [module name] git error  add submodule  git submodule add {gitRepositoryURL} {projectFolder}
+      <description>GIT delete specific file by searching history git filter-branch --force --index-filter &amp;quot;git rm --cached --ignore-unmatch [specific/dir/filename]&amp;quot; --prune-empty --tag-name-filter cat -- --all git push origin --force --all delete submodule git submodule deinit -f [moduel name] rm -rf .git/modules/[module name] git rm -f [module name] git error  add submodule  git submodule add {gitRepositoryURL} {projectFolder}
 git add &amp;ndash;all
 git commit -m &amp;lsquo;add sj submodule&amp;rsquo;
-remove submodule git submodule deinit -f {projectFolder}
- issue #1 “already exists in the index”    check submodule git ls-files &amp;ndash;stage {projectFolder}
-  remove submodule cache git rm &amp;ndash;cached {projectFolder}</description>
+remove submodule git submodule deinit -f {projectFolder}</description>
     </item>
     
     <item>

@@ -262,7 +262,9 @@
   </header>
 
   <p>
-  ANACONDA3 checking virtual envs conda info --envs (base) auto run off conda config --set auto_activate_base False Add vertual env conda create -n $NAME$ python=3.8 
+  ANACONDA3 checking virtual envs conda info --envs (base) auto run off conda config --set auto_activate_base False Add vertual env conda create -n $NAME$ python=3.8 (from *.yml) conda env create -f environment.yml  jupyter pip install ipykernel
+install kernel python -m ipykernel install &ndash;user &ndash;name [virtualEnv] &ndash;display-name &ldquo;[displayKenrelName]&rdquo; ex) python -m ipykernel install &ndash;user &ndash;name sisr &ndash;display-name sisr
+delete kernel jupyter kernelspec uninstall yourKernel
   </p>
 
   
@@ -301,12 +303,10 @@
   </header>
 
   <p>
-  GIT delete submodule git submodule deinit -f [moduel name] rm -rf .git/modules/[module name] git rm -f [module name] git error  add submodule  git submodule add {gitRepositoryURL} {projectFolder}
+  GIT delete specific file by searching history git filter-branch --force --index-filter &quot;git rm --cached --ignore-unmatch [specific/dir/filename]&quot; --prune-empty --tag-name-filter cat -- --all git push origin --force --all delete submodule git submodule deinit -f [moduel name] rm -rf .git/modules/[module name] git rm -f [module name] git error  add submodule  git submodule add {gitRepositoryURL} {projectFolder}
 git add &ndash;all
 git commit -m &lsquo;add sj submodule&rsquo;
 remove submodule git submodule deinit -f {projectFolder}
- issue #1 “already exists in the index”    check submodule git ls-files &ndash;stage {projectFolder}
-  remove submodule cache git rm &ndash;cached {projectFolder}
   </p>
 
   
